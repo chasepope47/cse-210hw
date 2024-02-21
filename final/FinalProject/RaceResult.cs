@@ -1,10 +1,9 @@
 public class RaceResult
 {
-    public int FinishPosition { get; set; }
-    public double[] LapTimes { get; set; }
+    public List<Team> FinishOrder { get; private set; }
 
-    public void RaceStatistics()
+    public RaceResult(List<Team> finishOrder)
     {
-        // Implementation
+        FinishOrder = finishOrder;
     }
 }

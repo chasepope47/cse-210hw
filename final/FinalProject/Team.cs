@@ -1,18 +1,11 @@
-using System.Collections.Generic;
-
 public class Team
 {
-    public string TeamName { get; set; }
-    public List<Driver> Drivers { get; set; }
+    public string TeamName { get; private set; }
+    public string Manufacturer { get; private set; }
 
-    public Team(string teamName, List<Driver> drivers)
+    public Team(string teamName, string manufacturer)
     {
         TeamName = teamName;
-        Drivers = drivers;
-    }
-
-    public void TeamStats()
-    {
-        // Implementation
+        Manufacturer = manufacturer;
     }
 }

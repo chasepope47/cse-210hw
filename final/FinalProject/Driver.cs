@@ -1,16 +1,11 @@
 public class Driver
 {
-    public string Name { get; set; }
-    public string Nationality { get; set; }
+    public string Name { get; private set; }
+    public string Manufacturer { get; private set; }
 
-    public Driver(string name, string nationality)
+    public Driver(string name, string manufacturer)
     {
         Name = name;
-        Nationality = nationality;
-    }
-
-    public void PerformanceStats()
-    {
-        // Implementation
+        Manufacturer = manufacturer;
     }
 }
